@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 const useValidation = (values) => {
   const [errors, setErrors] = useState({});
 
-  const validate = () => {
+  const validate = useCallback(() => {
     const newErrors = {};
 
     if (!values.name || values.name.length > 10) {
@@ -26,9 +26,13 @@ const useValidation = (values) => {
       newErrors.tags = '5글자 이내로 입력해주세요';
     }
 
-    setErrors(newErrors);
+    // 현재 오류 상태와 새로운 오류 상태를 비교하여 변경된 경우에만 업데이트
+    if (JSON.stringify(newErrors) !== JSON.stringify(errors)) {
+      setErrors(newErrors);
+    }
+
     return Object.keys(newErrors).length === 0;
-  };
+  }, [values, errors]);
 
   return { errors, validate };
 };

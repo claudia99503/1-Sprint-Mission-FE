@@ -1,138 +1,127 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 120px;
-    background-color: #FFFFFF;
-    height: 60px;
-    border-bottom: 1px solid #DFDFDF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  max-width: 1920px;
+  background-color: #ffffff;
+  height: 60px;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 .panda {
-    height: 40px;
-    margin-left: 0;
-    margin-right: 50px;
+  height: 40px;
+
+  margin-right: 10px;
 }
 
 .profile {
-    height: 40px;
-    margin-left: auto;
-    margin-right: 0;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    padding-top: 5px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 5px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    line-height: 26px;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Pretendard', sans-serif;
-    color: #4B5563;
+  text-decoration: none;
+  line-height: 26px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Pretendard", sans-serif;
+  color: #4b5563;
 }
 
 .board-link {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .market-link.active {
-    color: #3692FF;
+  color: #3692ff;
 }
 
 /* 태블릿 버전 */
 @media (min-width: 744px) and (max-width: 1199px) {
-    .navbar {
-        padding: 0 40px;
-    }
+  .navbar {
+    width: 100%;
+    padding: 0 20px;
+  }
 
-    .navbar.registration-page {
-        padding-left: 20px;
-        width: 100%;
-    }
+  .navbar.registration-page {
+    padding-left: 20px;
+    width: 100%;
+  }
 
-    .login-button {
-        transform: translateX(-5px) !important;
-    }
+  .login-button {
+    transform: translateX(-5px) !important;
+  }
 
-    .panda {
-        margin-left: 0;
-        margin-right: 20px;
-    }
+  .panda {
+    margin-right: calc(30px);
+  }
 
-    .nav-links {
-        justify-content: flex-start;
-        padding-top: 5px;
-    }
+  .nav-links {
+    justify-content: flex-start;
+    padding-top: 5px;
+  }
 
-    .nav-links a {
-        margin-right: 20px;
-    }
-
-    .profile {
-        margin-left: auto;
-        margin-right: 0;
-    }
+  .nav-links a {
+    margin-right: 20px;
+  }
 }
 
+/*모바일 버전*/
 @media (min-width: 375px) and (max-width: 743px) {
-    .navbar {
-        width: 450px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .navbar {
+    width: 100%;
+    padding: 0 20px;
+  }
 
-    .navbar.registration-page {
-        padding-left: 0px;
-        width: 115%;
-    }
+  .navbar.registration-page {
+    padding-left: 0px;
+    width: 115%;
+  }
 
-    .login-button {
-        transform: translateX(10px) !important;
-        height: 40px !important;
-    }
+  .login-button {
+    transform: translateX(10px) !important;
+    height: 40px !important;
+  }
 
-    .panda {
-        width: 81px;
-        height: 27px;
-        margin-right: 12px;
-        margin-left: 20px;
-    }
+  .panda {
+    width: 81px;
+    height: 27px;
+  }
 
-    .nav-links {
-        justify-content: flex-start;
-        padding-top: 5px;
-        font-size: 16px;
-    }
+  .nav-links {
+    justify-content: flex-start;
+    padding-top: 5px;
+    font-size: 16px;
+  }
 
-    .nav-links a {
-        margin-right: 10px;
-    }
-
-    .profile {
-        margin-left: auto;
-        margin-right: 40px;
-    }
+  .nav-links a {
+    margin-right: 10px;
+  }
 }
 
 .login-button {
-    width: 88px;
-    height: 42px;
-    padding: 12px 23px;
-    background-color: #3692FF;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19.09px;
-    color: #F3F4F6;
-    cursor: pointer;
-    transform: translateX(20px);
+  width: 88px;
+  height: 42px;
+  padding: 12px 23px;
+  background-color: #3692ff;
+  border: none;
+  border-radius: 8px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: #f3f4f6;
+  cursor: pointer;
+  transform: translateX(20px);
 }
 

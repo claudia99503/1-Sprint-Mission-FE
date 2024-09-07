@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 12.5px;
+}
+
+.pagination-item {
+  width: 40px;
+  height: 40px;
+  padding: 12.5px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #6b7280;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pagination-item.active {
+  background-color: #2f80ed;
+  color: #f9fafb;
+}
+
+.pagination-item img {
+  width: 16px;
+  height: 16px;
+}
+

@@ -1,0 +1,56 @@
+.search-bar {
+  position: relative;
+  width: 325px; /* 데스크탑 및 기본 너비 */
+  height: 42px;
+  margin-right: 80px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 23px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 9px 30px 9px 50px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #9ca3af;
+}
+
+/* 태블릿 버전 */
+@media (min-width: 744px) and (max-width: 1199px) {
+  .search-bar {
+    width: 190px;
+    height: 42px;
+  }
+}
+
+/* 모바일 버전 */
+@media (max-width: 743px) {
+  .search-bar {
+    width: 100%;
+    height: 40px;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-icon {
+    top: 70%;
+  }
+
+  .search-bar input {
+    padding: 9px 30px 9px 50px;
+  }
+}
+

@@ -1,191 +1,194 @@
 .registration-form {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
- }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .form-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .form-header h2 {
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23.87px;
-    color: #1F2937;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.87px;
+  color: #1f2937;
 }
 
 .submit-button {
-    width: 74px;
-    height: 42px;
-    padding: 12px 23px;
-    background-color: #9CA3AF;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19.09px;
-    color: #F3F4F6;
-    cursor: pointer;
-    transform: translateX(18px);
+  width: 74px;
+  height: 42px;
+  padding: 12px 23px;
+  background-color: #9ca3af;
+  border: none;
+  border-radius: 8px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: #f3f4f6;
+  cursor: pointer;
+  transform: translateX(18px);
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .form-group label {
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19.09px;
-    color: #1F2937;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: #1f2937;
 }
 
 .form-group input,
 .form-group textarea {
-    padding: 12px;
-    border: 1px solid #E5E7EB;
-    border-radius: 8px;
-    background-color: #F3F4F6;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19.09px;
-    color: #1F2937;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: #1f2937;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    padding-left: 3px;
+  padding-left: 3px;
 }
 
 .form-group input.error,
 .form-group textarea.error {
-    border-color: #F74747;
+  border-color: #f74747;
 }
 
 .error-message {
-    color: #F74747;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14.32px;
+  color: #f74747;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.32px;
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .tag {
-    display: flex;
-    align-items: center;
-    background-color: #E5E7EB;
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16.72px;
-    color: #1F2937;
+  display: flex;
+  align-items: center;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.72px;
+  color: #1f2937;
 }
 
 .tag button {
-    background: none;
-    border: none;
-    margin-left: 8px;
-    cursor: pointer;
-    font-size: 12px;
-    line-height: 14.32px;
-    color: #F74747;
+  background: none;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 14.32px;
+  color: #f74747;
 }
 
 .form-group input#name,
 .form-group input#price,
 .form-group input#tag,
 .form-group textarea#description {
-    width: 100%;
+  width: 100%;
 }
 
 .form-group input#name,
 .form-group input#price,
 .form-group input#tag {
-    height: 40px;
+  height: 40px;
 }
 
 .form-group textarea#description {
-    height: 270px;
+  height: 270px;
 }
 
-  /* Tablet 기준 */
-  @media (max-width: 1199px) and (min-width: 744px) {
-    .form-group input#name,
-    .form-group textarea#description,
-    .form-group input#price,
-    .form-group input#tag {
-      width: 780px;
-      height: 30px;
-    }
+/* Tablet 기준 */
+@media (max-width: 1199px) and (min-width: 744px) {
+  .form-group input#name,
+  .form-group textarea#description,
+  .form-group input#price,
+  .form-group input#tag {
+    min-width: 696px;
+    width: calc(100% - 20px);
 
-    .form-group textarea#description {
-      height: 180px;
-    }
-
-    .submit-button {
-        transform: translateX(-6px);
-    }
+    height: 30px;
   }
 
-  /* Mobile 기준 */
-  @media (max-width: 743px) and (min-width: 375px) {
-    .registration-form {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .form-header h2 {
-      font-size: 18px;
-      line-height: 21.09px;
-    }
-
-    .submit-button {
-      width: 75px;
-      height: 36px;
-      font-size: 14px;
-      line-height: 16.09px;
-      transform: translateX(50px);
-    }
-
-    .form-group label,
-    .form-group input,
-    .form-group textarea {
-      font-size: 14px;
-      line-height: 16.09px;
-    }
-
-    .form-group input#name,
-    .form-group textarea#description,
-    .form-group input#price,
-    .form-group input#tag {
-      width: 425px;
-      height: 27px;
-    }
-
-    .form-group textarea#description {
-      height: 180px;
-    }
+  .form-group textarea#description {
+    height: 180px;
   }
+
+  .submit-button {
+    transform: translateX(-6px);
+  }
+}
+
+/* Mobile 기준 */
+@media (max-width: 743px) and (min-width: 375px) {
+  .registration-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .form-header h2 {
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+
+  .submit-button {
+    width: 75px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 16.09px;
+    transform: translateX(50px);
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    line-height: 16.09px;
+  }
+
+  .form-group input#name,
+  .form-group textarea#description,
+  .form-group input#price,
+  .form-group input#tag {
+    min-width: 345px;
+    height: 27px;
+    width: calc(100% + 25px);
+  }
+
+  .form-group textarea#description {
+    height: 180px;
+  }
+}
 

@@ -1,29 +1,40 @@
 .product-list {
-    padding: 20px;
-    max-width: 1260px;
-    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0; /* 왼쪽 여백 제거 */
+    padding-right: 0; /* 오른쪽 여백 제거 */
+    
 }
+
 
 .section-title {
     font-family: 'Pretendard', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 32px;
+    
     color: #111827;
     margin-bottom: 0px;
     text-align: left;
 }
 
+.best-product-card {
+    max-width: 282px;
+    max-height: 378px;
+}
+
 /* "베스트 상품" 글자 위치 조정 */
 .product-list .section-title {
-    margin-left: 20px;
+    padding-top: 20px;
     padding-bottom: 10px;
     font-weight: 700;
 }
 
 /* "판매 중인 상품" 글자 위치 조정 */
 .product-controls-container .section-title {
-    padding-left: 0px;
+    width: calc(100% - 80px);
     padding-bottom: 10px;
     font-weight: 700;
 }
@@ -39,7 +50,7 @@
 .best-products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+   
     margin-bottom: 40px;
 }
 
@@ -48,13 +59,14 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .product-controls {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-left: 60px;
+   
 }
 
 .search-bar {
@@ -180,9 +192,20 @@
 
 /* 태블릿 버전 */
 @media (min-width: 744px) and (max-width: 1199px) {
+    .product-list {
+        width: calc(100% - 40px); /* Navbar의 패딩을 제외한 너비 */
+        
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
     .best-products {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 33px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 베스트 상품은 2개의 카드로 구성 */
+        gap: 60px; /* 카드 간의 간격 설정 */
     }
 
     .product-card p.price {
@@ -194,7 +217,8 @@
     }
 
     .all-products {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* ProductCard의 너비를 유동적으로 조절 */
+        gap: 16px;
     }
 
     .search-bar {
@@ -381,6 +405,7 @@
         margin: 20px 0;
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 30px;
         gap: 10px;
     }
 

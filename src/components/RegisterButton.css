@@ -1,0 +1,36 @@
+.register-button {
+  width: 133px;
+  height: 42px;
+  padding: 12px 23px;
+  background-color: #3692ff;
+  border: none;
+  border-radius: 8px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  align-items: center;
+  line-height: 26px;
+  color: #f3f4f6;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 태블릿 버전 */
+@media (min-width: 744px) and (max-width: 1199px) {
+  .register-button {
+    width: 115px;
+    height: 42px;
+    font-size: 12px;
+  }
+}
+
+/* 모바일 버전 */
+@media (max-width: 743px) {
+  .register-button {
+    font-size: 12px;
+  }
+}
+
